@@ -15,64 +15,116 @@ function check(){
 	var question12 = document.quiz.question12.value;
 	
 	var correct = 0;
+	
+// ! Question 1 
+if (question1 == "Honestly" || question1 == "honestly" ) {
+	document.getElementById("textbox").style.color = "green";	
+	correct++;		
+} else {
+	document.getElementById("textbox").style.color = "red";
+}
 
-	if (question1 = "Honestly") {
-		correct++;
-}
-	if (question2 = "Code") {
-		correct++;
+// ! Question 2 
+if (question2 == "Code" || question2 == "code") {
+	document.getElementById("textbox").style.color = "green";	
+	correct++;		
+} else {
+	document.getElementById("textbox").style.color = "red";
+	correct++;
 }	
-	if (question3 == "Integrity") {
-		correct++;
+
+// ! Question 3 
+if (question3 == "Integrity" || question3 == "integrity") {
+	document.getElementById("textbox").style.color = "green";	
+	correct++;		
+}   else {
+	document.getElementById("textbox").style.color = "red";
+	correct++;
 }
-	if (question4 == "Everyone") {
-		correct++;
+
+// ! Question 4 	
+if (question4 == "Everyone" || question4 == "everyone") {
+	document.getElementById("textbox").style.color = "green";	
+	correct++;		
+}	else {
+	document.getElementById("textbox").style.color = "red";
+	correct++;
 }
-	if (question5 == "Retaliation") {
-		correct++;
+
+// ! Question 5 
+if (question5 == "Retaliation" || question5 == "retaliation") {
+	document.getElementById("textbox").style.color = "green";	
+	correct++;		
+} 	else {
+	document.getElementById("textbox").style.color = "red";
+	correct++;
 }
-	if (question6 == "Ethics") {
-		correct++;
+
+// ! Question 6 
+if (question6 == "Ethics" || question6 == "ethics") {
+	document.getElementById("textbox").style.color = "green";	
+	correct++;		
+	} else {
+	document.getElementById("textbox").style.color = "red";
+	correct++;
 }	
-	if (question7 == "Tolerate") {
-		correct++;
-}
-	if (question8 == "Safety") {
-		correct++;
-}
-	if (question9 == "Raise It") {
-		correct++;
-}
-	if (question10 == "Environmental") {
-		correct++;
-}
-	if (question11 == "Regulations") {
-		correct++;
-}
-	if (question12 == "Best") {
-		correct++;
+
+// ! Question 7 
+if (question7 == "Tolerate" || question7 == "tolerate") {
+	document.getElementById("textbox").style.color = "green";	
+	correct++;		
+} else {
+	document.getElementById("textbox").style.color = "red";
+	correct++;
 }
 	
-	// var pictures = ["img/win.gif", "img/meh.jpeg", "img/lose.gif"];
-	// var messages = ["Great job!", "That's just okay", "You really need to do better"];
-	// var score;
+// ! Question 8 
+if (question8 == "Safety" || question8 == "safety") {
+	document.getElementById("textbox").style.color = "green";	
+	correct++;		
+} else {
+	document.getElementById("textbox").style.color = "red";
+	correct++;
+}
 
-	// if (correct == 0) {
-	// 	score = 2;
-	// }
+// ! Question 9 
+if (question9 === "Raise It" || question9 === "RaiseIt" || question9 === "raise it") {
+	document.getElementById("textbox").style.color = "green";	
+	correct++;		
+} else {
+	document.getElementById("textbox").style.color = "red";
+	correct++;
+}
 
-	// if (correct > 0 && correct < 3) {
-	// 	score = 1;
-	// }
+// ! Question 10 
+if (question10 == "Environmental" || question10 == "environmental") {
+	document.getElementById("textbox").style.color = "green";	
+	correct++;		
+} else {
+	document.getElementById("textbox").style.color = "red";
+	correct++;
+}
 
-	// if (correct == 3) {
-	// 	score = 0;
-	// }
+// ! Question 11 
+if (question11 == "Regulations" || question11 == "regulations") {
+	document.getElementById("textbox").style.color = "green";	
+	correct++;		
+} else {
+	document.getElementById("textbox").style.color = "red";
+	correct++;
+}
+	
+// ! Question 12 
+if (question12 == "Best" || question12 == "best") {
+	document.getElementById("textbox").style.color = "green";	
+	correct++;		
+} else {
+	document.getElementById("textbox").style.color = "red";
+	correct++;
+}
 
 	document.getElementById("after_submit").style.visibility = "visible";
 
-	// document.getElementById("message").innerHTML = messages[score];
 	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
-	// document.getElementById("picture").src = pictures[score];
-	}
-	
+}
+

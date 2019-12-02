@@ -1,27 +1,28 @@
-/* body {
+body {
 	font-family: 'Lato', sans-serif;
 }
 
 #quiz {
 	margin-left: 10px;
-	background: #d2def2;
+	/* background: #d2def2; */
 	padding: 10px 20px 10px 20px;
-	width: 400px;
+	width: 90%;
 	border-radius: 20px;
-	float: left;
 }
 
-input {
+/* input {
 	margin-bottom: 20px;
 	display: block;
-}
+} */
 
 #textbox {
 	height: 25px;
-	font-size: 16px;
-	border-radius: 5px;
-	border: none;
+	font-size: 1rem;
+	font-weight: 600;
+	border-radius: 1px;
+	border: 1px solid black;
 	padding-left: 5px;
+	color: black;
 }
 
 #button {
@@ -44,13 +45,10 @@ input {
 
 #after_submit {
 	visibility: hidden;
-	background: #ff5459;
-	padding: 10px 20px 10px 20px;
-	width: 400px;
-	border-radius: 20px;
-	float: left;
 	margin-left: 20px;
-	font-size: 30px;
+	font-size: 20px;
+	color: Red;
+	margin: 0 0 0 0;
 }
 
 #picture {
@@ -60,4 +58,4 @@ input {
 
 #mc {
 	display: inline;
-} */
+}
