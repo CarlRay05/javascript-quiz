@@ -1,8 +1,6 @@
-body {
+/* body {
 	font-family: 'Lato', sans-serif;
 }
-
-
 
 #quiz {
 	margin-left: 10px;
@@ -11,7 +9,6 @@ body {
 	width: 400px;
 	border-radius: 20px;
 	float: left;
-
 }
 
 input {
@@ -27,7 +24,6 @@ input {
 	padding-left: 5px;
 }
 
-
 #button {
 	background: green;
 	border: none;
@@ -39,14 +35,11 @@ input {
 	margin-top: 15px;
 }
 
-
-
 #button:hover {
 	background: white;
 	border: 1px solid green;
 	color: black;
 	cursor: pointer;
-
 }
 
 #after_submit {
@@ -58,8 +51,6 @@ input {
 	float: left;
 	margin-left: 20px;
 	font-size: 30px;
-
-
 }
 
 #picture {
@@ -67,8 +58,6 @@ input {
 	height: 245px;
 }
 
-
-
 #mc {
 	display: inline;
-} 
+} */

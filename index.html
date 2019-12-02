@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>Kevin's Kwiz!</title>
+<title>DFA Value Integrity</title>
 <link href ="style.css" rel ="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <script src = "main.js"></script>
@@ -11,34 +11,77 @@
 
 
 <body>
-<h1>This is best quiz on the internet!</h1>
+<h1>Value Integrity Word Search</h1>
 
-
+<div id="wordBank">
+ <h3>Word Bank</h3>
+    <ul>
+        <li>RETALIATION</li>
+        <li>EVERYBODY</li>
+        <li>HELPLINE</li>
+        <li>TRUTHFULLY</li>
+        <li>TOLERATE</li>
+        <li>EVERYONE</li>
+        <li>ENVIRONMENTAL</li>
+        <li>HONESTLY</li>
+        <li>CODE</li>
+        <li>POLICY</li>
+        <li>ETHICS</li>
+        <li>RAISE IT</li>
+        <li>INTEGRITY</li>
+        <li>RULES</li>
+        <li>SAFETY</li>
+        <li>BEST</li>
+        <li>REGULATIONS</li>
+        <li>FORBID</li>
+    </ul>
+</div>
+<br />
 <form id = "quiz" name = "quiz">
 
+<!--  ! Question 1 -->
+<p class = "questions"> 1. We are committed to conducting business legally, fairly, and  <input id = "textbox" type = "text" name = "question1">.</p>
 
-<p class = "questions">What is the capital of Rhode Island?</p>
-<input id = "textbox" type = "text" name = "question1">
+<!--  ! Question 2 -->
+<p class = "questions"> 2. The <input id = "textbox" type = "text" name = "question2"> is an overview of the supporting Value Integrity policies. </p>
 
-<p class = "questions">What is the capital of Connecticut?</p>
-<input type = "radio" id = "mc" name = "question2" value = "Hartford"> Hartford<br>
-<input type = "radio" id = "mc" name = "question2" value = "Heartford"> Heartford<br>
+<!--  ! Question 3 -->
+<p class = "questions"> 3. <input id = "textbox" type = "text" name = "question3"> is the foundation on which we build relationships and trust with each other.</p>
 
-<p class = "questions">What is the capital of New York?</p>
+<!--  ! Question 4 -->
+<p class = "questions"> 4.	Recognizing the responsibility to act with integrity applies to: <input id = "textbox" type = "text" name = "question4">. Every day. Every way.</p>
 
-<input type = "radio" id = "mc" name = "question3" value = "Albany"> Albany<br>
-<input type = "radio" id = "mc" name = "question3" value = "All Benny's"> All Benny's<br>
+<!--  ! Question 5 -->
+<p class = "questions"> 5.	Employees are expected to raise concerns without fear of <input id = "textbox" type = "text" name = "question5">. Every day. Every way.</p>
 
+<!--  ! Question 6 -->
+<p class = "questions"> 6. The Company's <input id = "textbox" type = "text" name = "question6"> Policy is the foundation of our commitment to integrity.</p>
 
-<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+<!--  ! Question 7 -->
+<p class = "questions"> 7.	The Company does not <input id = "textbox" type = "text" name = "question7"> bullying, harassment, or discrimination in the workplace, or any other work-related settings, such as business trips or business-related social events.</p>
 
+<!--  ! Question 8 -->
+<p class = "questions"> 8.	Employees are our most important assets and their <input id = "textbox" type = "text" name = "question8"> and health is of primary concern.</p>
 
+<!--  ! Question 9 -->
+<p class = "questions"> 9.	Employees are encouraged to use the <input id = "textbox" type = "text" name = "question9"> process if they suspect a violation of the Code.</p>
+
+<!--  ! Question 10 -->
+<p class = "questions"> 10.	We take our responsibility to be good <input id = "textbox" type = "text" name = "question10"> stewards seriously and recognize the value of protecting the environment.</p>
+
+<!--  ! Question 11 -->
+<p class = "questions"> 11.	Our employees work diligently to ensure our products meet and exceed customer requirements and comply with all applicable laws and <input id = "textbox" type = "text" name = "question11">.</p>
+
+<!--  ! Question 12 -->
+<p class = "questions"> 12.	Employees are expected to act in the <input id = "textbox" type = "text" name = "question12"> interest of the Company at all times.</p>
+
+<input id = "button" type = "button" value = "Check my answers" onclick = "check();">
 </form>
 
 <div id = "after_submit">
-<p id = "number_correct"></p>
-<p id = "message"></p>
-<img id = "picture">
+    <p id = "number_correct"></p>
+    <!-- <p id = "message"></p>
+    <img id = "picture"> -->
 </div>
 </html>
 
