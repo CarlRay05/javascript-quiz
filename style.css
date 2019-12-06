@@ -34,7 +34,8 @@ button {
 	margin-top: 15px;
 }
 
-#button:hover, button {
+#button:hover,
+button {
 	background: white;
 	border: 1px solid green;
 	color: black;
@@ -49,6 +50,6 @@ button {
 	margin: 0 0 0 0;
 }
 
-#formSubmisson {
-	display: flex;
+#formSubmission {
+	display: none;
 }
