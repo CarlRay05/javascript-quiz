@@ -1,7 +1,16 @@
+:root{
+	--barn-red: #A80E35;
+}
+
+
 body {
 	font-family: "ff-good-web-pro", sans-serif;
 	font-weight: 400;
 	font-style: normal;
+}
+
+.hero{
+
 }
 
 #quiz {
@@ -52,4 +61,8 @@ button {
 
 #formSubmission {
 	display: none;
+}
+
+.hero{
+	background-color: var(--barn-red);
 }
