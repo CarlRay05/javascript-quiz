@@ -1,5 +1,7 @@
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: "ff-good-web-pro", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 #quiz {
@@ -9,11 +11,6 @@ body {
 	width: 90%;
 	border-radius: 20px;
 }
-
-/* input {
-	margin-bottom: 20px;
-	display: block;
-} */
 
 #textbox {
 	height: 25px;
@@ -25,7 +22,8 @@ body {
 	color: black;
 }
 
-#button {
+#button,
+button {
 	background: green;
 	border: none;
 	border-radius: 5px;
@@ -36,7 +34,7 @@ body {
 	margin-top: 15px;
 }
 
-#button:hover {
+#button:hover, button {
 	background: white;
 	border: 1px solid green;
 	color: black;
@@ -51,11 +49,6 @@ body {
 	margin: 0 0 0 0;
 }
 
-#picture {
-	width: 375px;
-	height: 245px;
-}
-
-#mc {
-	display: inline;
+#formSubmisson {
+	display: flex;
 }
