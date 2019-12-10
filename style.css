@@ -20,11 +20,10 @@ body {
 	margin: 0 auto;
 }
 
-/* input {
+input {
 	color: black;
-} */
-
-/* no grid support? */
+}
+/* no grid support? */ 
 /* .sidebar {
 	float: left;
 	width: 19.1489%;
@@ -38,23 +37,21 @@ body {
 /* make a grid */
 #wrapper {
 	display: grid;
+	grid-template-columns: 150px auto;
+	grid-template-rows: auto auto 5px;
+	grid-gap: 1em;
 }
 
 header {
 	grid-column: 1 / -1;
 	background-color: var(--barn-red);
-}
-
-.hero {
-	display: grid;
-	grid-auto-columns: 1fr 1fr;
-	grid-auto-rows: auto;
-	justify-content: center;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
 }
 
 .heroLogo {
 	padding: 30px 30px 0 30px;
-	max-width: 500px;
+	max-width: 400px;
 	margin: 0 auto;
 	width: 100%;
 }
@@ -73,55 +70,33 @@ header {
 	text-align: center;
 }
 
-main {
-	display: grid;
-	grid-template-columns: 1fr;
-}
-
-/* @media screen and (min-width: 834px) {
-	main {
-		grid-template-columns: 1fr 1fr;
-	}
-} */
-
-aside {
-	display: grid;
-	grid-auto-columns: 1fr;
-}
-
-aside h3 {
-	justify-self: center;
-}
-
-.wordBank {
-	display: grid;
-	grid-column: 2/3;
+aside h3{
+	padding-left: 25px;
+	font-size: 1.5rem;
+	margin: 10px 0;
 }
 
 #quiz {
-	display: grid;
 	padding: 10px 20px 10px 20px;
-	width: 95%;
+	width: calc(100% - 5%);
 	border-radius: 20px;
 	border: 2px solid var(--barn-red);
 	margin: 0 auto;
 }
 
-#textbox {
-	height: 25px;
+input {
 	font-size: 1rem;
-	font-weight: 600;
-	border-radius: 1px;
+	font-weight: 400;
+	/* border-radius: 3px; */
 	border: 1px solid black;
 	padding-left: 5px;
-	color: black;
 }
 
 span {
 	color: var(--barn-red);
 }
 
-#button,
+/* #button,
 button {
 	background: var(--barn-red);
 	border: none;
@@ -133,14 +108,35 @@ button {
 	margin-top: 15px;
 	max-width: 300px;
 	font-weight: bold;
+} */
+
+#button{
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: var(--barn-red);
+padding: 10px 15px;
+border-radius: 5px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
 }
 
-#button:hover,
+#button:hover{
+	background: var(--DFA-dark-grey);
+	letter-spacing: 1px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+}
+
+/* #button:hover,
 button {
 	background: white;
 	border: 3px solid var(--barn-red);
 	color: var(--barn-red);
-}
+} */
 
 #after_submit {
 	visibility: hidden;
