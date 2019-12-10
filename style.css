@@ -1,20 +1,110 @@
-:root{
-	--barn-red: #A80E35;
+:root {
+	--barn-red: #a80e35;
+	--light-grey: #dddddd;
+	--DFA-grey: #646464;
+	--DFA-dark-grey: #404040;
+	--gold: #f7be00;
 }
 
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
 
 body {
 	font-family: "ff-good-web-pro", sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+/* input {
+	color: black;
+} */
+
+/* no grid support? */
+/* .sidebar {
+	float: left;
+	width: 19.1489%;
+}
+
+.main {
+	float: right;
+	width: 79.7872%;
+} */
+
+/* make a grid */
+#wrapper {
+	display: grid;
+}
+
+header {
+	grid-column: 1 / -1;
+	background-color: var(--barn-red);
+}
+
+.hero {
+	display: grid;
+	grid-auto-columns: 1fr 1fr;
+	grid-auto-rows: auto;
+	justify-content: center;
+}
+
+.heroLogo {
+	padding: 30px 30px 0 30px;
+	max-width: 500px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.heroLogo img {
+	width: 100%;
+}
+
+.heroCopy {
+	color: #ffffff;
+	font-size: calc(1rem - 10%);
+	font-weight: 300;
+	display: flex;
+	justify-content: center;
+	align-content: flex-end;
+	text-align: center;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+/* @media screen and (min-width: 834px) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+} */
+
+aside {
+	display: grid;
+	grid-auto-columns: 1fr;
+}
+
+aside h3 {
+	justify-self: center;
+}
+
+.wordBank {
+	display: grid;
+	grid-column: 2/3;
 }
 
 #quiz {
-	margin-left: 10px;
-	/* background: #d2def2; */
+	display: grid;
 	padding: 10px 20px 10px 20px;
-	width: 90%;
+	width: 95%;
 	border-radius: 20px;
+	border: 2px solid var(--barn-red);
+	margin: 0 auto;
 }
 
 #textbox {
@@ -27,9 +117,13 @@ body {
 	color: black;
 }
 
+span {
+	color: var(--barn-red);
+}
+
 #button,
 button {
-	background: green;
+	background: var(--barn-red);
 	border: none;
 	border-radius: 5px;
 	padding: 10px;
@@ -37,28 +131,25 @@ button {
 	font-size: 16px;
 	transition-duration: .5s;
 	margin-top: 15px;
+	max-width: 300px;
+	font-weight: bold;
 }
 
 #button:hover,
 button {
 	background: white;
-	border: 1px solid green;
-	color: black;
-	cursor: pointer;
+	border: 3px solid var(--barn-red);
+	color: var(--barn-red);
 }
 
 #after_submit {
 	visibility: hidden;
 	margin-left: 20px;
 	font-size: 20px;
-	color: Red;
+	color: var(--barn-red);
 	margin: 0 0 0 0;
 }
 
 #formSubmission {
 	display: none;
-}
-
-.hero{
-	background-color: var(--barn-red);
 }
