@@ -70,10 +70,15 @@ header {
 	text-align: center;
 }
 
+aside{
+	line-height: 1.5em;
+}
+
 aside h3{
 	padding-left: 25px;
 	font-size: 1.5rem;
 	margin: 10px 0;
+	font-weight: bold;
 }
 
 #quiz {
@@ -87,7 +92,7 @@ aside h3{
 input {
 	font-size: 1rem;
 	font-weight: 400;
-	/* border-radius: 3px; */
+	border-radius: 3px;
 	border: 1px solid black;
 	padding-left: 5px;
 }
@@ -110,16 +115,23 @@ button {
 	font-weight: bold;
 } */
 
+/* #button:hover,
+button {
+	background: white;
+	border: 3px solid var(--barn-red);
+	color: var(--barn-red);
+} */
+
 #button{
-color: #fff !important;
-text-transform: uppercase;
-text-decoration: none;
-background: var(--barn-red);
-padding: 10px 15px;
-border-radius: 5px;
-display: inline-block;
-border: none;
-transition: all 0.4s ease 0s;
+	color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: var(--barn-red);
+	padding: 10px 15px;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
 }
 
 #button:hover{
@@ -130,13 +142,6 @@ transition: all 0.4s ease 0s;
 	box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
 	transition: all 0.4s ease 0s;
 }
-
-/* #button:hover,
-button {
-	background: white;
-	border: 3px solid var(--barn-red);
-	color: var(--barn-red);
-} */
 
 #after_submit {
 	visibility: hidden;
@@ -149,3 +154,38 @@ button {
 #formSubmission {
 	display: none;
 }
+
+#formSubmission button{
+	color: #494949 !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #ffffff;
+	padding: 20px;
+	border: 4px solid #494949 !important;
+	display: flex;
+	margin: 0 auto;
+	transition: all 0.4s ease 0s;
+}
+
+#formSubmission button:hover{
+	color: #ffffff !important;
+	background: #f6b93b;
+	border-color: #f6b93b !important;
+	transition: all 0.4s ease 0s;
+}
+
+#number_correct{
+	color:black;
+	font-size: 1em;
+	font-weight: 400;
+	text-align: center;
+}
+
+.buttons{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	justify-content: center;
+	margin: 0 auto;
+}
+
